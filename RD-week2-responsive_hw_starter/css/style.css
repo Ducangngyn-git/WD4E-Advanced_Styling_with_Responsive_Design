@@ -1,23 +1,57 @@
-/* ==========================================
-   Truy vấn #1: Chế độ xem máy tính bảng (Tablet)
-   ========================================== */
+body {
+    background-color: #dedede;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+div img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+div {
+    display: inline-block;
+    width: 24%;
+    margin: 5px;
+    padding: 2px;
+}
+
 @media screen and (min-width: 772px) {
     div {
-        width: 45%; /* Chiều rộng div bằng 45% chế độ xem */
-        vertical-align: top; /* Căn lề trên để các div xếp ngang hàng đều nhau */
+        width: 45%;
+        vertical-align: top;
     }
 
     div img, img {
-        max-height: 30vh; /* Chiều cao hình ảnh không quá 30% chiều cao khung xem (viewport height) */
-        width: auto;      /* Tự động điều chỉnh chiều rộng để giữ đúng tỉ lệ ảnh */
+        max-height: 30vh;
+        width: auto;
     }
 }
 
-/* ==========================================
-   Truy vấn #2: Chế độ xem màn hình lớn (Large Screen)
-   ========================================== */
 @media screen and (min-width: 998px) {
     div {
-        width: 30%; /* Chiều rộng div bằng 30% chế độ xem */
+        width: 30%;
     }
 }
